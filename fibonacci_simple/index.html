@@ -1,41 +1,40 @@
 <!doctype html>
 <html lang="fr">
+
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Bootstrap demo</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
-    <link rel="stylesheet" href="main.css">
 </head>
 
 <body>
     <div class="container">
         <h1>Génération de la suite de fibonacci</h1>
+        <!--Formulaire-->
         <form>
             <div class="mb-3">
                 <label for="" class="form-label">Choisir un nombre!!!</label>
                 <input type="number" min="0" step="1" class="form-control" id="js_input_number">
             </div>
-            <button type="button"  class="btn btn-primary" id="js_button_submit">Générer</button>
+            <button type="button" class="btn btn-primary" id="js_button_submit">Générer</button>
         </form>
-        <div class="alert alert-danger d-none" id="js_alert_error" role="alert">
-            Erreur de saisie!!!!!!!!!!!!!
-        </div>
-        <div id="js_table_result" class="mb-5 d-none">
+        <!--Tableau-->
+        <div class="mb-5">
             <table class="table table-striped">
                 <thead>
-                  <tr>
-                    <th scope="col">#</th>
-                    <th scope="col">First</th>
-                    <th scope="col">Last</th>
-                    <th scope="col">Rapport</th>
-                  </tr>
+                    <tr>
+                        <th scope="col">#</th>
+                        <th scope="col">First</th>
+                        <th scope="col">Last</th>
+                        <th scope="col">Rapport</th>
+                    </tr>
                 </thead>
                 <tbody id="js_table_tbody">
-                  
+
                 </tbody>
-              </table>
+            </table>
         </div>
 
     </div>
